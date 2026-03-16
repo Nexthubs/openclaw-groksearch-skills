@@ -42,7 +42,7 @@ Preferred key resolution order:
 3. `GROK_API_KEYS` (comma-separated)
 4. `config.local.json`
 5. `config.json`
-6. `~/.codex/config/grok-search.json`
+6. `~/.openclaw/config/grok-search.json`
 
 Recommended setup for this workspace: keep the real key(s) inside the skill folder in `config.local.json` so the whole skill can be backed up and moved as one directory.
 
@@ -128,5 +128,5 @@ python3 scripts/grok_search.py --query "OpenClaw Telegram streaming" --profile m
 
 - This skill is optimized for freshness and breadth, not canonical-source purity.
 - `docs-compare` now explicitly separates official facts from community interpretation.
-- If the answer must come from official docs, switch to `exa-search`.
+- If the answer must come from official docs, switch to `tavily-search`.
 - Use `references/query-recipes.md` for reusable query patterns.
